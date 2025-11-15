@@ -15,11 +15,10 @@
     <!-- #endregion Normalize -->
     <!-- #region Font family for all document-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wdth,wght@75..100,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wdth,wght@75..100,100..900&display=swap" rel="stylesheet">    
     <!-- #endregion Font family for all document -->
-     
-    <link rel="stylesheet" href="./css/styles.css" />
+     <link rel="stylesheet" href="./css/styles.css" />
     </head>
   <body>
     <!-- #region Header-->
@@ -60,7 +59,7 @@
         <section class="section-hero">
           <div class="container container-hero">
             <h1 class="hero-title">Effective Solutions for Your Business</h1>
-             <button class="hero-button" type="button">Order Service</button>
+             <button class="hero-button" type="button" data-modal-open>Order Service</button>
           </div>
         </section>
 <!-- #endregion Hero-Main title -->
@@ -465,9 +464,33 @@
                       </a>
                     </li>
                   </ul>
-        </div> 
-     </div>     
-    </footer>
+        </div>
+      </div> 
+        <!-- #region Footer Subscribe -->
+       <div class="footer-form">
+          <p class="footer-subscribe-title">Subscribe</p>
+          <form>
+            <label for="user-email">E-mail</label>
+            <input type="email" 
+            id="user-email" 
+            name="user-email" 
+            placeholder="E-mail"/>
+         <button class="subscribe" type="button">Subscribe
+         <svg class="iconsubscribe" width="24" height="24">
+          <use href="./images/icons.svg#icon-send"></use>
+        </svg>
+      </button>
+     </form>
+     </div>
+
+     <!-- #endregion Footer Subscribe -->
+         </footer>
     <!-- #endregion Footer -->
+     <!-- #region Backdrop -->
+      <div class="backdrop" data-modal>
+        <div class="modal"></div>
+      </div>
+      <!-- #endregion Backdrop -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
