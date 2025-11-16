@@ -501,34 +501,55 @@
             <form >
               <div class="form-wrapper">
                 <label class="label-field" for="username">Name</label>
-                <input type="text" id="username" name="username">
+                <div class="field-wrapper">
+                  <input class="field-text" type="text" id="username" name="username" autofocus>
+                  <svg class="field-icon" width="18" height="18">
+                  <use href="./images/icons.svg#icon-person">
+                  </use>
+                </div>
               </div>
 
               <div class="form-wrapper">
                 <label class="label-field" for="userphn">Phone</label>
-                <input type="tel" id="userphn" name="userphn">
+                <div class="field-wrapper">
+                  <input class="field-text" type="tel" id="userphn" name="userphn"  min="12" max="50">
+                  <svg class="field-icon" width="18" height="24">
+                  <use href="./images/icons.svg#icon-phone">
+                  </use>
+                </div>
               </div>
 
               <div class="form-wrapper">
                 <label class="label-field" for="useremail">Email</label>
-                <input type="email" id="useremail" name="useremail">
+                <div class="field-wrapper">
+                  <input class="field-text" type="email" id="useremail" name="useremail">
+                  <svg class="field-icon" width="18" height="24">
+                  <use href="./images/icons.svg#icon-email">
+                  </use>
+                </div>
               </div>
 
               <div class="form-wrapper">
                 <label class="label-field" for="comment">Comment</label>
-                <textarea  name="comment"                id="comment"                
-                placeholder="Text input"></textarea>
+                <textarea class="comment-area" name="comment"                id="comment"                
+                placeholder="Text input""></textarea>
               </div>
 
               <div class="form-wrapper">
-                <input type="checkbox" id="policy" name="policy" value="accept">
-                <label for="policy">I accept the terms and conditions of the <a href="" class="accent">Privacy Policy</a></label>
+                <input class="policy-checkbox" visualy-hidden type="checkbox" id="policy" name="policy" value="accept">
+                <label for="policy" class="policy-label">
+                  <span class="custom-checkbox">
+                    <svg class="" width="10" height="8">
+                  <use href="./images/icons.svg#icon-checkbox">
+                  </use>
+                  </span>I accept the terms and conditions of the 
+                  <a href="#" class="accent policy-link">Privacy Policy</a>
+                </label>
               </div>
 
-              <button class="submit">Sent</button>
-            </form>    
-            
-            
+              <button class="btn-form" type="submit">Sent</button>
+            </form>  
+                
           </div>
 
 
