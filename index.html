@@ -475,7 +475,7 @@
             id="user-email" 
             name="user-email" 
             placeholder="E-mail"/>
-         <button class="subscribe" type="button">Subscribe
+         <button class="subscribe" type="submit">Subscribe
          <svg class="iconsubscribe" width="24" height="24">
           <use href="./images/icons.svg#icon-send"></use>
         </svg>
@@ -484,11 +484,62 @@
      </div>
 
      <!-- #endregion Footer Subscribe -->
-         </footer>
+  </footer>
     <!-- #endregion Footer -->
      <!-- #region Backdrop -->
-      <div class="backdrop" data-modal>
-        <div class="modal"></div>
+      <div class="backdrop is-open" data-modal>
+        <div class="modal">
+          <div class="popup-review">
+            <p class="popup-text">Leave your contacts and we will call you back</p>
+            <button class="close-popup-btn" type="button">
+              <svg class="popup-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close">
+              </use>
+             </svg>
+            </button>
+            
+            <form >
+              <div class="form-wrapper">
+                <label class="label-field" for="username">Name</label>
+                <input type="text" id="username" name="username">
+              </div>
+
+              <div class="form-wrapper">
+                <label class="label-field" for="userphn">Phone</label>
+                <input type="tel" id="userphn" name="userphn">
+              </div>
+
+              <div class="form-wrapper">
+                <label class="label-field" for="useremail">Email</label>
+                <input type="email" id="useremail" name="useremail">
+              </div>
+
+              <div class="form-wrapper">
+                <label class="label-field" for="comment">Comment</label>
+                <textarea  name="comment"                id="comment"                
+                placeholder="Text input"></textarea>
+              </div>
+
+              <div class="form-wrapper">
+                <input type="checkbox" id="policy" name="policy" value="accept">
+                <label for="policy">I accept the terms and conditions of the <a href="" class="accent">Privacy Policy</a></label>
+              </div>
+
+              <button class="submit">Sent</button>
+            </form>    
+            
+            
+          </div>
+
+
+
+
+
+
+
+
+
+        </div>
       </div>
       <!-- #endregion Backdrop -->
     <script src="./js/modal.js"></script>

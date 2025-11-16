@@ -32,6 +32,9 @@ img
   padding: 0 15px;
   margin: 0 auto;
 }
+input{
+  font-family: inherit;
+}
 /* #endregion Main */
 /* #region Header */
 .header-page{
@@ -545,7 +548,7 @@ color: #f4f4fd;
   height: 100%;
 
   background-color: rgba(46, 47, 66, 0.4);
-
+  
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -563,17 +566,86 @@ color: #f4f4fd;
   left: 50%;
   transform: translate(-50%,-50%);
 
-  width: 408px;
-  min-height: 584px;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
-  background-color: #fcfcfc;
-  border-radius: 4px;
-
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 .backdrop:(not).is-open .modal{
   transform: translate(-50%,-100%) scale(1.5);
 }
+.popup-review{
+  position: relative;
+  z-index: 999;
+  width: 408px;
+  min-height: 584px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fcfcfc;
+  border-radius: 4px;
+  padding: 24px;
+}
+/* #region Close+text*/
+.popup-text{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  margin-top: 48px;
+  margin-bottom: 16px;
+}
+.close-popup-btn{
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  border-radius: 50%;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  fill: #2e2f42;
+  stroke-width: 1px;
+  stroke: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  border: none;
+  background-color: blueviolet, #e7e9fc;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+
+.popup-close-icon{
+}
+.close-popup-btn:focus{
+  background-color: #404BBF;
+  fill: #fff;
+
+}
+/* #endregion Close+text*/
+.form-wrapper{
+  margin-bottom: 8px;
+}
+.label-field{
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  margin-bottom: 4px;
+}
+
+/* #region Name*/
+.username{
+
+}
+
+/* #endregion Name*/
+
+
+
+
+
+
+
+
+
 
 /*#endregion Backdrop */
 
