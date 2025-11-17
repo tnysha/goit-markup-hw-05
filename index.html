@@ -466,7 +466,7 @@
                   </ul>
           </div>
       <!-- #region Footer Subscribe -->
-       <div class="footer-form">
+       <div class="container-form">
           <p class="footer-subscribe-title">Subscribe</p>
           <form class="subscribe-field">
             <label for="user-email" ></label>
@@ -485,10 +485,10 @@
   </footer>
     <!-- #endregion Footer -->
      <!-- #region Backdrop -->
-      <div class="backdrop is-open" data-modal>
+      <div class="backdrop" data-modal>
         <div class="modal">
             <p class="popup-text">Leave your contacts and we will call you back</p>
-            <button class="close-popup-btn" type="button">
+            <button class="close-popup-btn" type="button" data-modal-close>
               <svg class="popup-close-icon" width="8" height="8">
               <use href="./images/icons.svg#icon-close">
               </use>
@@ -536,20 +536,20 @@
               </div>
 
               <div class="form-wrapper">
-                <input class="policy-checkbox" type="checkbox" id="policy" name="policy" value="accept"/>
-                <label for="policy" class="policy-label">
-                  <span class="custom-checkbox" visualy-hidden>
+                <input class="policy-checkbox" visualy-hidden type="checkbox" id="policy" name="policy" value="accept"/>
+                <label class="policy-label" for="policy">
+                  <span class="custom-checkbox">
                     <svg class="" width="10" height="8">
                   <use href="./images/icons.svg#icon-checkbox">
                   </use>
                   </svg>
-                  </span>I accept the terms and conditions of the 
-                  <a href="#" class="accent policy-link">Privacy Policy</a>
+                  </span>
+                  I accept the terms and conditions of the 
+                  <a href="#" class="accent-policy-link">Privacy Policy</a>
                 </label>
               </div>
-            </form>
-            <button class="btn-form" type="submit">Sent</button>
-            
+              <button class="btn-form" type="submit">Sent</button>
+              </form>            
         </div>
       </div>
       <!-- #endregion Backdrop -->
