@@ -465,12 +465,11 @@
                     </li>
                   </ul>
           </div>
-
-           <!-- #region Footer Subscribe -->
+      <!-- #region Footer Subscribe -->
        <div class="footer-form">
           <p class="footer-subscribe-title">Subscribe</p>
           <form class="subscribe-field">
-            <label for="user-email" name="email"></label>
+            <label for="user-email" ></label>
             <input class="email-field" type="email" id="user-email"         name="user-email" placeholder="E-mail"/>
 
             <button class="subscribe-btn" type="submit">Subscribe
@@ -482,18 +481,11 @@
            </form>
           </div>
         </div>
-
-
-
-
-      </div> 
-      
-
      <!-- #endregion Footer Subscribe -->
   </footer>
     <!-- #endregion Footer -->
      <!-- #region Backdrop -->
-      <div class="backdrop" data-modal>
+      <div class="backdrop is-open" data-modal>
         <div class="modal">
             <p class="popup-text">Leave your contacts and we will call you back</p>
             <button class="close-popup-btn" type="button">
@@ -544,9 +536,9 @@
               </div>
 
               <div class="form-wrapper">
-                <input class="policy-checkbox" visualy-hidden type="checkbox" id="policy" name="policy" value="accept"/>
+                <input class="policy-checkbox" type="checkbox" id="policy" name="policy" value="accept"/>
                 <label for="policy" class="policy-label">
-                  <span class="custom-checkbox">
+                  <span class="custom-checkbox" visualy-hidden>
                     <svg class="" width="10" height="8">
                   <use href="./images/icons.svg#icon-checkbox">
                   </use>
