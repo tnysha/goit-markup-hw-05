@@ -524,6 +524,7 @@ color: #f4f4fd;
 }
 .subscribe-field{
   display: flex;
+  gap: 24px;
 }
 .email-field{
   width: 264px;
@@ -532,8 +533,14 @@ color: #f4f4fd;
   border-radius: 4px;
   background-color: transparent;
   color: #ffffff;
-  padding: 8px 16px;
-}
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #fff;
+  padding-left: 16px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+ }
 input::placeholder{
   color: #ffffff;
 }
